@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <div class="main-two-div">
+        <div class="result"></div>
+
+        <div class="button-container">
+            <button class="number" onclick="createEquation('1')">1</button>
+            <button class="number" onclick="createEquation('2')">2</button>
+            <button class="number" onclick="createEquation('3')">3</button>
+            <button class="op" onclick="createEquation(' + ')">+</button>
+
+            <button class="number" onclick="createEquation('4')">4</button>
+            <button class="number" onclick="createEquation('5')">5</button>
+            <button class="number" onclick="createEquation('6')">6</button>
+            <button class="op" onclick="createEquation(' - ')">-</button>
+            
+            <button class="number" onclick="createEquation('7')">7</button>
+            <button class="number" onclick="createEquation('8')">8</button>
+            <button class="number" onclick="createEquation('9')">9</button>
+            <button class="op" onclick="createEquation(' * ')">*</button>
+            
+            <button class="number" onclick="createEquation('.')">.</button>
+            <button class="number" onclick="createEquation('0')">0</button>
+            <button class="op" onclick="calculateEquation()">=</button>
+            <button class="op" onclick="createEquation(' / ')">/</button>
+            
+        </div>
+        
+        <button class="clear" onclick="clearResultMemory()">Clear</button>
+
+    </div>
+
+    <script src="cal.js"></script>
+</body>
+</html>
